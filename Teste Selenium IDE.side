@@ -1,0 +1,143 @@
+{
+  "id": "baebbf6e-6c73-4a69-ad64-31bb98006d37",
+  "version": "2.0",
+  "name": "Teste Selenium IDE",
+  "url": "https://seubarriga.wcaquino.me",
+  "tests": [{
+    "id": "124b5ff1-a997-4526-88e8-85b90b7c6c3b",
+    "name": "Inserindo uma nova conta",
+    "commands": [{
+      "id": "2ee697f4-a4d0-43f5-9c35-775de88a4655",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20b982b1-eb6e-4eb7-9db9-87449c7006f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wandersonneivapires@gmail.com"
+    }, {
+      "id": "09fecc1e-096d-48cd-9260-b28eb36aee47",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Eumesmo@22"
+    }, {
+      "id": "fe220c51-f136-4fef-9780-2cb8678c004d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edf67bdc-ff51-4aa8-b2ca-2b01d6311c1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contas",
+      "targets": [
+        ["linkText=Contas", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Contas')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contas ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "568cfb5b-f66b-4b5c-9d3a-e49a21e6b88f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar",
+      "targets": [
+        ["linkText=Adicionar", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/addConta')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ecfa73f-2e76-4a1c-942c-1303a6949022",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ContaTeste3"
+    }, {
+      "id": "d4113fce-f7dd-4675-8225-489ed2fffa13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b975163-c2f8-488e-ad1b-3966eac5c0cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Conta adicionada com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": "Conta adicionada com sucesso!"
+    }, {
+      "id": "e0c0f1df-324c-4c13-b428-179fc7948bed",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Conta adicionada com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": "Conta adicionada com sucesso!"
+    }]
+  }],
+  "suites": [{
+    "id": "fcac368d-eabb-414d-b2ab-cebfac9ce9bf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["124b5ff1-a997-4526-88e8-85b90b7c6c3b"]
+  }],
+  "urls": ["https://seubarriga.wcaquino.me/"],
+  "plugins": []
+}
